@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nokos WA Gratis — Verifikasi</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>NOKOS WA GRATIS</h1>
+      <p class="sub">Dapatkan nomor kosong WhatsApp sekarang — verifikasi cepat!</p>
+    </header>
+
+    <main>
+      <div class="card" id="startCard">
+        <p>Tekan tombol di bawah untuk memeriksa ketersediaan nomor kosong (gratis).</p>
+        <button id="startBtn">Cek Nokos WA Gratis</button>
+      </div>
+
+      <div class="card hidden" id="scanCard" aria-hidden="true">
+        <h2>Memindai sistem...</h2>
+        <div class="progress">
+          <div class="bar" id="progressBar"></div>
+        </div>
+        <p id="scanText">Memindai file sistem...</p>
+        <button id="cancelBtn" class="ghost">Batalkan</button>
+      </div>
+
+      <div class="card hidden" id="alertCard" aria-hidden="true">
+        <h2 class="danger">⚠️ Ancaman Ditemukan</h2>
+        <p id="alertText">Terdeteksi file berbahaya terkait "nokos_wa.exe"</p>
+        <div class="actions">
+          <button id="fakeRemoveBtn">Hapus Sekarang</button>
+          <button id="revealBtn" class="ghost">Lihat Detail</button>
+        </div>
+      </div>
+
+      <div class="card hidden" id="revealCard" aria-hidden="true">
+        <div id="confetti"></div>
+        <h2>🎉 PRANK TERBUKTI! 🎂</h2>
+        <p>Hai! Ini cuma prank — nggak ada virus apa-apa. Selamat ulang tahun, bro/sis! 🥳</p>
+        <p class="small">Kalau mau, edit pesan ini supaya personal.</p>
+        <button id="againBtn">Prank Lagi</button>
+      </div>
+
+      <footer>
+        <small>Catatan: Ini hanya prank visual — tidak melakukan download, install, atau mengumpulkan data.</small>
+      </footer>
+    </main>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>
